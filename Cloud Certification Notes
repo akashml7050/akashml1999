@@ -1,0 +1,122 @@
+☁️ Cloud Certification Notes by Akash ML for Quick Glance.
+
+📘 AZ-900: Microsoft Azure Fundamentals
+
+1. Cloud Concepts
+- IaaS (Infrastructure as a Service): Provides virtualized computing resources over the internet.
+  -Example: Deploying a Windows VM to host a web app.
+- PaaS (Platform as a Service): Provides a platform allowing customers to develop, run, and manage applications.
+  - Example: Hosting a .NET app on Azure App Service.
+- SaaS (Software as a Service): Delivers software applications online.
+  - Example: Using Microsoft 365 for productivity.
+- CapEx vs OpEx: CapEx is upfront investment (e.g., buying servers); OpEx is pay-as-you-go (e.g., Azure).
+- Benefits: High Availability (99.9% uptime), Scalability (scale out/in), Fault Tolerance (auto-redundancy), Disaster Recovery (geo-redundant storage).
+- Cloud Models: 
+  - Public: Azure
+  - Private: On-prem cloud like Hyper-V
+  - Hybrid: Mix of both for flexibility
+
+2. Core Azure Services
+- Compute: VMs (Windows/Linux), App Services (web hosting), Functions (event-driven), AKS (Kubernetes)
+  - Scenario: Host an API on Azure Functions for dynamic scaling.
+- Networking: VNet (isolate network), NSG (traffic rules), Load Balancer (distribute traffic), VPN Gateway (secure connection)
+  - Scenario: Connect on-prem to Azure via VPN.
+ Storage: Blob (unstructured data), File (SMB shares), Queue (message queue), Disk (VM storage)
+   Scenario: Store images in Blob storage for a web app.
+- Databases: Azure SQL (relational), Cosmos DB (NoSQL)
+  - Scenario: Use Cosmos DB for a globally distributed app.
+
+3. Core Solutions & Management Tools
+- Tools: Azure Portal (GUI), CLI (command line), PowerShell (scripts), ARM Templates (infra-as-code)
+- Management: Azure Monitor (logs/metrics), Advisor (recommendations), Resource Manager (resource deployment)
+  - Scenario: Use ARM to deploy identical environments in dev and prod.
+
+4. Security, Privacy, Compliance
+- Security Tools: Azure AD (identity), MFA (multi-factor), RBAC (role access), Key Vault (secret storage), Azure Firewall
+- Compliance: Trust Center lists Azure certifications and data regulations
+  - Scenario: Restrict app access using RBAC and enforce MFA for admins.
+
+5. Pricing & Support
+- Tools: Pricing Calculator (estimate cost), TCO Calculator (compare on-prem vs cloud)
+- Support Plans: Vary by needs (Basic → Professional Direct)
+- SLAs: Guarantees like 99.9% uptime; defines service availability
+  - Scenario: Choose Standard support for 24x7 business-critical workloads.
+
+---
+
+📗 AZ-104: Azure Administrator Associate
+
+1. Manage Azure Identities and Governance
+- Azure AD: Central directory for users, devices, and roles
+  - Scenario: Grant an intern reader-only access to a resource group.
+- RBAC: Assign permissions to users or groups using predefined/custom roles
+- Governance: Tags (cost mgmt), Policy (enforce rules), Management Groups (group subs)
+
+2. Implement and Manage Storage
+- Blob/File/Table/Queue: Choose based on workload (e.g., Blob for media, File for shared drives)
+- Access Control: Keys, SAS tokens, and Azure AD-based access
+- Lifecycle Management: Automatically move blobs to cool/archive tiers
+  - Scenario: Automatically archive logs older than 30 days.
+
+3. Deploy and Manage Azure Compute Resources
+- VMs: Create, scale, automate via ARM
+- App Services: Host web apps with autoscale and staging slots
+- Security: Bastion (secure RDP/SSH), Extensions (run scripts)
+  -Scenario: Use Custom Script Extension to install IIS on VM post-deployment.
+
+4. Configure and Manage Virtual Networks
+- VNet: Create isolated networks
+- Subnets/NSGs: Secure and control traffic
+- VNet Peering: Connect networks without VPN
+- ExpressRoute: Private link to Azure
+  - Scenario: Set up secure communication between two Azure VNets across regions.
+
+5. Monitor and Back Up Azure Resources
+- Monitor: Metrics, logs, alerts
+- Log Analytics: Query logs using KQL
+- Recovery Services Vault: Backups, Site Recovery
+  - Scenario: Back up VMs daily and enable site recovery for DR.
+
+---
+
+AWS Cloud Practitioner (CLF-C02)
+
+1. Cloud Concepts
+- Benefits: Elasticity (scale on demand), Agility (rapid deployment), Cost-effectiveness (pay-as-you-go)
+- Global Infra: AWS Regions (geographical), AZs (redundancy), Edge Locations (CDN)
+- Cloud Models: 
+  - IaaS: EC2
+  - PaaS: Elastic Beanstalk
+  - SaaS: Amazon Chime
+
+2. Core AWS Services
+- Compute: EC2 (VMs), Lambda (serverless), Beanstalk (PaaS)
+  - Scenario: Use Lambda to resize images on upload.
+- Storage: S3 (object), EBS (block), Glacier (archival)
+- Networking: VPC (network isolation), Route 53 (DNS), ELB (load balancing)
+  - Scenario: Host static website on S3 + Route 53 for custom domain.
+- Databases: RDS (managed SQL), DynamoDB (NoSQL)
+
+3. Security and Compliance
+- IAM: Create users, assign policies, use MFA
+- Security Tools: Shield (DDoS), WAF (web filter), GuardDuty (threat detection), KMS (encryption)
+- Compliance: AWS handles infra security, customer handles data/apps (Shared Model)
+
+4. Billing and Pricing
+- Free Tier: Try services free (e.g., 750 hrs EC2/month)
+- Billing Tools: Cost Explorer (visualize), Budgets (set alerts), TCO Calculator
+- Support Plans: Basic (free), Developer, Business, Enterprise
+
+5. Cloud Architecture Principles
+- Well-Architected Framework:
+  - Operational Excellence: automate changes, monitor systems
+  - Security: implement least privilege, protect data
+  - Reliability: recovery and fault tolerance
+  - Performance Efficiency: choose the right resources
+  - Cost Optimization: avoid overprovisioning
+  - Scenario: Design a 3-tier web app using ELB, EC2, and RDS with Auto Scaling and CloudWatch alerts
+
+---
+
+🎯 *Use these topic-wise definitions, scenarios, and notes for quick interview prep and confident answers!*
+
