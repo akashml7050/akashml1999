@@ -28,7 +28,7 @@ Predefined Group Policy Objects (GPOs) to secure enterprise Windows environments
 ### 🌐 [Hybrid Cloud Integration Guide](https://github.com/akashml1999/azure-hybrid-cloud-setup)
 Architecture + scripts to integrate on-prem infrastructure with Azure cloud
 
-### 📚 [Cloud Certification Notes](https://github.com/akashml1999/cloud-cert-notes)
+### 📚 [Cloud Certification Notes](https://github.com/akashml7050/akashml1999/blob/main/Cloud%20Certification%20Notes)
 My personal study notes for AZ-104, AZ-900, AWS Cloud Practitioner
 
 ---
